@@ -10,10 +10,10 @@ export default function NotFoundPage() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative flex min-h-[calc(100dvh-200px)] items-center justify-center overflow-hidden bg-[#FCFAF7] py-16 px-3">
+    <section className="relative flex min-h-[calc(100dvh-200px)] items-center justify-center overflow-hidden bg-[#F0F9FF] py-16 px-3">
       <span
         aria-hidden
-        className="pointer-events-none absolute start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-cormorant text-[180px] leading-none text-[#6D49170D] select-none md:text-[280px] 2xl:text-[340px]"
+        className="pointer-events-none absolute start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-cormorant text-[180px] leading-none text-[#0284C70D] select-none md:text-[280px] 2xl:text-[340px]"
       >
         BIJOU
       </span>
@@ -40,7 +40,7 @@ export default function NotFoundPage() {
           />
           <Link
             href="/all-collections"
-            className="flex items-center gap-2 border-b-2 border-black pb-2.5 text-[10px] font-semibold tracking-[2px] text-light-brown max-2xl:text-[12px] 2xl:tracking-[4px]"
+            className="flex items-center gap-2 border-b-2 border-primary pb-2.5 text-[10px] font-semibold tracking-[2px] text-light-brown max-2xl:text-[12px] 2xl:tracking-[4px]"
           >
             {t("Explore Collections")}
             <HiOutlineArrowLongRight className="rtl:rotate-180" />

@@ -24,12 +24,12 @@ export default function QuoteSec({ section }: any) {
     const quote = getTranslation(section?.translations, "description") || "Jewelry is the most intimate form of art we possess — a quiet conversation between the body and the object.";
     const author = getTranslation(section?.translations, "subtitle") || "The Bijou Sky Atelier";
     return (
-        <section className="2xl:py-25 lg:py-15 py-10 bg-[#FCFAF7] text-center">
+        <section className="2xl:py-25 lg:py-15 py-10 bg-[#F0F9FF] text-center">
             <div className='2xl:max-w-[1200px] md:max-w-[700px] max-w-[90%] mx-auto'>
                 <Image src="/assets/images/sparkle.png" alt="quote" width={28} height={28} className='mx-auto max-2xl:w-5 max-2xl:h-5' />
                 <SecHd className='mt-10 mb-8'
                     text={`"${quote}"`} />
-                <span className='text-[#A37C43] max-2xl:text-[12px] uppercase 2xl:tracking-[4px] tracking-[2px]'>— {author}</span>
+                <span className='text-light-brown max-2xl:text-[12px] uppercase 2xl:tracking-[4px] tracking-[2px] font-medium'>— {author}</span>
             </div>
         </section>
     )

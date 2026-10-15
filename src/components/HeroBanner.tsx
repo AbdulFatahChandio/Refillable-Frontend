@@ -38,17 +38,17 @@ const firstWords = words.slice(0, -2).join(" ");
 
   return (
     <section
-      className={`relative pt-6 pb-10 flex items-end bg-[#FCFAF7]`}
+      className={`relative pt-6 pb-10 flex items-end bg-[#F0F9FF]`}
     >
-      <span className="absolute font-cormorant 2xl:text-[315px] lg:text-[240px] text-[#6D49170D] 2xl:-top-22 lg:-top-16 max-lg:hidden start-[52%] -translate-x-1/2">BIJOU</span>
+      <span className="absolute font-cormorant 2xl:text-[315px] lg:text-[240px] text-[#0284C70D] 2xl:-top-22 lg:-top-16 max-lg:hidden start-[52%] -translate-x-1/2">BIJOU</span>
       {/* <div style={{
         backgroundImage: `url('/assets/images/hero.png')`,
       }} className="absolute md:min-h-[calc(100dvh-130px)] h-full w-full top-0 start-0 bg-cover bg-center bg-no-repeat rtl:-scale-x-100"/> */}
       <div className="grid grid-cols-12 relative z-20 items-center container-fluid max-md:gap-y-10">
         <div className="lg:col-span-6 md:col-span-8 col-span-12 md:space-y-6 space-y-3 md:pe-15">
           <Subtitle text={getTranslation(section?.translations, "subtitle") || "Fine Jewellery · Est. 2026"} />
-          <h1 className="2xl:text-7xl md:text-[52px] text-2xl">
-            {firstWords} <span className="text-brown block">{lastTwoWords}</span>
+          <h1 className="2xl:text-7xl md:text-[52px] text-2xl text-primary">
+            {firstWords} <span className="text-light-brown block">{lastTwoWords}</span>
           </h1>
           <p className="2xl:text-lg! text-sm!">
             {getTranslation(section?.translations, "description") ||
@@ -56,7 +56,7 @@ const firstWords = words.slice(0, -2).join(" ");
           </p>
           <div className="flex items-center 2xl:gap-10 md:gap-5 gap-3 flex-wrap">
             <LinkButton icon btnTheme="dark" text={getTranslation(section?.translations, "buttonText") || "EXPLORE COLLECTION"} link={"/all-collections"} />
-            <Link href="/collections/new-arrivals" className="flex items-center gap-2 font-semibold max-md:text-[10px] max-2xl:text-[12px] text-light-brown pb-2.5 border-b-2 border-black 2xl:tracking-[4px] tracking-[2px]">NEW ARRIVALS <HiOutlineArrowLongRight className='rtl:rotate-180' /></Link>
+            <Link href="/collections/new-arrivals" className="flex items-center gap-2 font-semibold max-md:text-[10px] max-2xl:text-[12px] text-light-brown pb-2.5 border-b-2 border-primary 2xl:tracking-[4px] tracking-[2px]">NEW ARRIVALS <HiOutlineArrowLongRight className='rtl:rotate-180' /></Link>
           </div>
           
       </div>

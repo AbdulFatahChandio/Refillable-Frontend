@@ -108,7 +108,7 @@ export default function ThankYou() {
 
   if (status === "loading") {
     return (
-      <section className="relative flex min-h-[calc(100dvh-180px)] items-center justify-center overflow-hidden bg-[#FBF4E2] px-3 py-16">
+      <section className="relative flex min-h-[calc(100dvh-180px)] items-center justify-center overflow-hidden bg-[#F0F9FF] px-3 py-16">
         <div className="flex flex-col items-center gap-4">
           <Spinner />
           <p className="text-sm tracking-wide text-brown/70">
@@ -128,11 +128,11 @@ export default function ThankYou() {
       {/* Atmosphere */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(165deg,#FBF4E2_0%,#FCFAF7_45%,#F7DDA6_120%)]"
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(165deg,#F0F9FF_0%,#F8FAFC_45%,#E0F2FE_120%)]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-24 start-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(247,221,166,0.55)_0%,transparent_70%)] md:h-[560px] md:w-[560px]"
+        className="pointer-events-none absolute -top-24 start-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(224,242,254,0.75)_0%,transparent_70%)] md:h-[560px] md:w-[560px]"
       />
       <div
         aria-hidden
@@ -158,7 +158,7 @@ export default function ThankYou() {
               className={`relative flex size-20 items-center justify-center rounded-full md:size-24 ${
                 isError
                   ? "bg-red-50 ring-1 ring-red-200"
-                  : "bg-white/80 ring-1 ring-brown/15 shadow-[0_12px_40px_rgba(109,73,23,0.12)]"
+                  : "bg-white/80 ring-1 ring-brown/15 shadow-[0_12px_40px_rgba(2,132,199,0.12)]"
               }`}
             >
               {!isError && (

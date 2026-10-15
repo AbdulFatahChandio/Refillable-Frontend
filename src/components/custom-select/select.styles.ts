@@ -124,7 +124,7 @@ export const outlineSelectStyles = {
     backgroundColor: state.isSelected
       ? 'var(--brown-color)'
       : state.isFocused
-        ? '#f5eee5'
+        ? 'var(--pale-mint)'
         : '#ffffff',
     ':active': {
       backgroundColor: 'var(--brown-color)',
@@ -137,7 +137,7 @@ export const outlineSelectStyles = {
     minHeight: 50,
     backgroundColor: 'transparent',
     borderRadius: 0,
-    border: '1px solid #e3d2c0',
+    border: '1px solid #BAE6FD',
     textTransform: 'uppercase' as const,
     color: '#ffffff',
     cursor: 'pointer',
@@ -151,10 +151,10 @@ export const outlineSelectStyles = {
   }),
   dropdownIndicator: (provided: any, state: any) => ({
     ...provided,
-    color: state.isFocused ? '#6D4917' : '#A37C43',
+    color: state.isFocused ? 'var(--primary-color)' : 'var(--light-brown-color)',
     padding: 8,
     '&:hover': {
-      color: '#6D4917',
+      color: 'var(--primary-color)',
     },
     display: 'flex',
   }),
@@ -171,7 +171,7 @@ export const outlineSelectStyles = {
   menu: (provided: any) => ({
     ...provided,
     borderRadius: 0,
-    border: '1px solid #e3d2c0',
+    border: '1px solid #BAE6FD',
     minWidth: '200px',
     backgroundColor: '#ffffff',
     color: 'var(--brown-color)',
@@ -187,7 +187,7 @@ export const outlineSelectStyles = {
     maxHeight: 260,
     padding: 0,
     WebkitOverflowScrolling: 'touch',
-    scrollbarColor: 'var(--light-brown-color) #f5eee5',
+    scrollbarColor: 'var(--light-brown-color) var(--pale-mint)',
   }),
   valueContainer: (provided: any, _: any) => ({
     ...provided,

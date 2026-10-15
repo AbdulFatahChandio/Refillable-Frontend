@@ -30,17 +30,21 @@
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
 
 :root {
-  --background: #fff;
-  --foreground: #121212;
-  --primary-color: #121212;
-  --secondary-color: #fff;
-  --dark-gold-color: #f0c76a;
-  --gold-color: #f7dda6;
-  --light-gold-color: #fbf4e2;
-  --brown-color: #6D4917;
-  --light-green-color: #06402b;
-  --light-brown-color: #A37C43;
-  --light-gray-color: #474747;
+  --background: #ffffff;
+  --foreground: #1E293B;
+  --primary-color: #0369A1;
+  --secondary-color: #ffffff;
+  --dark-gold-color: #0EA5E9;
+  --gold-color: #E0F2FE;
+  --light-gold-color: #F0F9FF;
+  --brown-color: #0284C7;
+  --light-green-color: #38BDF8;
+  --light-brown-color: #0369A1;
+  --light-gray-color: #475569;
+  --pale-mint: #F0F9FF;
+  --slate-blue: #0369A1;
+  --sage-green: #0284C7;
+  --dark-charcoal: #1E293B;
   --font-agilera: "agilera";
   --font-boska-medium: "boska-medium";
   --font-boska-bold: "boska-bold";
@@ -60,31 +64,23 @@
   --color-light-green: var(--light-green-color);
   --color-light-brown: var(--light-brown-color);
   --color-light-gray: var(--light-gray-color);
+  --color-pale-mint: var(--pale-mint);
+  --color-slate-blue: var(--slate-blue);
+  --color-navy: var(--slate-blue);
+  --color-sage-green: var(--sage-green);
+  --color-dark-charcoal: var(--dark-charcoal);
   --font-agilera: var(--font-agilera);
   --font-boska-medium: var(--font-boska-medium);
   --font-boska-bold: var(--font-boska-bold);
   --font-inter: var(--font-inter);
   --font-cormorant: var(--font-cormorant);
-
-  /* --animate-spin: spin 3s linear infinite;
-
-  @keyframes spin {
-
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(-360deg);
-    }
-  } */
 }
 
 [data-theme="light"] {
-  --primary-color: #121212;
-  --secondary-color: #fff;
-  --background: var(--secondary-color);
-  --foreground: var(--primary-color);
+  --primary-color: #0369A1;
+  --secondary-color: #ffffff;
+  --background: #ffffff;
+  --foreground: #1E293B;
 }
 
 ::-webkit-scrollbar {
@@ -92,12 +88,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: white;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--pale-mint);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #070505;
+  background-color: var(--primary-color);
   border-radius: 10px;
 }
 
@@ -111,10 +107,10 @@ body {
   overflow-x: hidden;
 } */
 :is(h1, h2) {
-  @apply font-boska-bold capitalize;
+  @apply font-boska-bold capitalize text-primary;
 }
 :is(h3, h4, h5, h6) {
-  @apply font-boska-medium capitalize;
+  @apply font-boska-medium capitalize text-primary;
 }
 
 .container {
@@ -162,15 +158,14 @@ input:-webkit-autofill:active {
 }
 
 p {
-
-  @apply max-md:text-[12px];
+  @apply max-md:text-[12px] text-light-gray;
 }
 .authHeading {
   @apply md:text-[32px] text-[22px] text-primary capitalize text-center;
 }
 
 .authPara {
-  @apply 2xl:text-[18px] text-sm text-primary text-center;
+  @apply 2xl:text-[18px] text-sm text-light-gray text-center;
 }
 
 .secHd {

@@ -57,7 +57,7 @@ export default function Footer() {
   const { isLoggedIn } = useUserStore();
 
   return (
-    <footer className="text-primary">
+    <footer className="text-foreground">
       {/* Top area */}
       <div className="mx-3 md:mx-20 pt-10 lg:pt-20">
         <div className="grid md:gap-5 gap-3 2xl:gap-16 grid-cols-1 lg:grid-cols-12 items-start">
@@ -66,7 +66,7 @@ export default function Footer() {
             <Link href="/" aria-label="bijou Home" className="inline-block">
               <Image src={logo} alt="bijou" className="w-[190px] 2xl:w-[276px]" />
             </Link>
-            <p className="lg:max-w-[400px] md:mt-7 mt-4 mb-4 2xl:tracking-[4px] tracking-[2px] 2xl:text-base text-sm">
+            <p className="lg:max-w-[400px] md:mt-7 mt-4 mb-4 2xl:tracking-[4px] tracking-[2px] 2xl:text-base text-sm text-light-gray">
               {t("18K gold-plated jewelry, hand-finished for the quietly bold. Designed to be lived in, layered, and loved.")}
             </p>
 
@@ -106,7 +106,7 @@ export default function Footer() {
                   {t("Shop")}
                 </h4>
 
-                <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-[#020202] font-normal! 2xl:tracking-[4px] tracking-[2px]">
+                <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-light-gray hover:[&_a]:text-primary font-normal! 2xl:tracking-[4px] tracking-[2px]">
                   {categories?.map((item, index: any) => (
                     <li key={index}>
                       <Link
@@ -129,7 +129,7 @@ export default function Footer() {
               <h4 className="uppercase! 2xl:text-lg text-sm font-inter! font-medium! text-light-brown">
                 {t("SUPPORT")}
               </h4>
-              <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-[#020202] font-normal! 2xl:tracking-[4px] tracking-[2px]">
+              <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-light-gray hover:[&_a]:text-primary font-normal! 2xl:tracking-[4px] tracking-[2px]">
                 {/* <li><Link href="/shipping-policy" className="hover:text-white">{t("Shipping & Returns")}</Link></li> */}
                 <li>
                   <Link href="/faqs" className="hover:underline">
@@ -152,7 +152,7 @@ export default function Footer() {
             </nav>
             <nav aria-label={t("Company")} className="md:col-span-2">
               <h4 className="uppercase! 2xl:text-lg text-sm font-inter! font-medium! text-light-brown">{t("Company")}</h4>
-              <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-[#020202] font-normal! 2xl:tracking-[4px] tracking-[2px]">
+              <ul className="md:mt-6 mt-4 md:space-y-4 space-y-2 max-2xl:text-[12px] text-light-gray hover:[&_a]:text-primary font-normal! 2xl:tracking-[4px] tracking-[2px]">
                 {/* <li><Link href="/shipping-policy" className="hover:text-white">{t("Shipping & Returns")}</Link></li> */}
                 <li>
                   <Link href="/about-us" className="hover:underline">
@@ -219,8 +219,8 @@ export default function Footer() {
             </nav> */}
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-8 mt-8 border-t">
-          <p className="text-[#020202] text-center sm:text-start 2xl:text-lg text-[12px] 2xl:tracking-[4px] tracking-[2px]">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-8 mt-8 border-t border-[#E2E8F0]">
+          <p className="text-light-gray text-center sm:text-start 2xl:text-lg text-[12px] 2xl:tracking-[4px] tracking-[2px]">
             © {year} Bijou Sky.
           </p>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4">

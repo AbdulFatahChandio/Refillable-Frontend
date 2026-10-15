@@ -20,7 +20,7 @@ const NotificationToast = ({ title, body, onClick }: NotificationToastProps) => 
         >   
             <h4 className="text-base text-secondary flex items-center gap-2">
                 <div className="w-8 h-8 flex items-center justify-center bg-secondary rounded-full shrink-0">
-                    <IoIosNotifications color="#a37c43" fontSize={20} />
+                    <IoIosNotifications color="#0284C7" fontSize={20} />
                 </div>
                 <div>
                     <span className="line-clamp-1">{title}</span>

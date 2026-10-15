@@ -84,7 +84,7 @@ export default function AboutPage() {
     <article dir={isRtl ? "rtl" : "ltr"}>
       {/* Hero */}
       <section
-        className="relative overflow-hidden bg-[#FCFAF7] px-3 py-14 lg:py-28"
+        className="relative overflow-hidden bg-[#F0F9FF] px-3 py-14 lg:py-28"
         style={{
           backgroundImage: `url('${heroBg}')`,
           backgroundSize: "cover",
@@ -185,7 +185,7 @@ export default function AboutPage() {
 
       {/* Craftsmanship & Materials — section five */}
       {sectionFive && (
-        <section className="bg-[#FCFAF7] px-3 py-12 2xl:py-24 lg:py-16">
+        <section className="bg-[#F0F9FF] px-3 py-12 2xl:py-24 lg:py-16">
           <div className="container mx-auto max-w-[780px] text-center">
             <h2 className="mb-8 font-boska-bold text-2xl text-primary md:text-4xl lg:text-5xl">
               {getTranslation(sectionFive?.translations, "title")}

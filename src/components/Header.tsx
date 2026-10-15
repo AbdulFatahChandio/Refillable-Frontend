@@ -57,7 +57,7 @@ export default function Header({ onClick }: any) {
           </div>
         </div>
         <div
-          className={`header py-3 relative z-50 top-0 w-full border-b border-brown transition-all duration-300 bg-[#FCFAF7] text-black
+          className={`header py-3 relative z-50 top-0 w-full border-b border-brown/20 transition-all duration-300 bg-[#F0F9FF] text-foreground
             ${router.pathname === "/" && "border-transparent"}`}
         >
           <div
